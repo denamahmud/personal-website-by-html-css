@@ -1,0 +1,497 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    
+    background-color: #333;
+    
+}
+
+.grid-container{
+    
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto
+}
+
+
+/*    start header   */
+
+
+.bio{
+    
+    background-color: #f5f500;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    
+}
+
+.bio .left{
+    
+    
+    display: grid;
+    grid-template-rows: 20% 20% 60%;
+    position: relative;
+    top: 10%;
+    left: 20%;
+    
+    
+}
+
+.bio .left h2{
+    
+    height: 60px;
+    color: #474700;
+    opacity: 0.5;
+    font-size: 55px;
+    width: 100px;
+    border-bottom: 2px solid #474700
+    
+    
+    
+}
+
+.bio .left span{
+    text-transform: uppercase;
+    
+}
+
+.bio .left .social-media{
+    
+    display: flex;
+    justify-content: flex-start
+    
+}
+.bio .left .social-media li{
+    
+    list-style: none
+    
+    
+}
+.bio .left .social-media li a{
+    opacity: .7;
+    color: #474700;
+    margin-right: 30px;
+    font-size: 30px;
+    padding: 20px;
+    
+}
+.bio .left .social-media li a:hover{
+    
+    color: white;
+    background-color: red;
+    transition: 1s
+    
+}
+
+.bio .left .info{
+    padding: 20px;
+    height: 340px;
+    width: 450px;
+    max-width: 100%;
+    background-color: #111
+    
+    
+ 
+}
+.bio .left .info .div-1, .div-3, .div-4, .div-5{
+     display: flex;
+    margin-bottom: 45px;
+    font-size: 25px;
+    margin-top: 10px;
+    color: #fff
+    
+    
+}
+.bio .left .info .div-1 span, .div-3 span, .div-4 span, .div-5 span{
+    
+    opacity: 0.5;
+    margin-right: 15px;
+    margin-left: 15px;
+    
+    
+}
+
+.bio .right{
+    
+    position: relative;
+    top: 15%;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    
+}
+.bio .right h3{
+    color: #474700;
+    text-align: justify;
+    font-size: 30px;
+
+}
+.bio .right h3 span{
+    
+    color: #993300;
+    font-size: 17px;
+    opacity: 0;
+    animation: animate 3s infinite;
+    
+    
+}
+
+.bio .right h3 span:nth-of-type(2){
+    
+    animation-delay: .1s
+}
+.bio .right h3 span:nth-of-type(3){
+    
+    animation-delay: .2s
+}
+
+.bio .right h3 span:nth-of-type(4){
+    
+    animation-delay: .3s
+}
+
+.bio .right h3 span:nth-of-type(5){
+    
+    animation-delay: .4s
+}
+
+.bio .right h3 span:nth-of-type(6){
+    
+    animation-delay: .5s
+}
+
+.bio .right h3 span:nth-of-type(7){
+    
+    animation-delay: .6s
+}
+
+.bio .right h3 span:nth-of-type(8){
+    
+    animation-delay: .7s
+}
+
+.bio .right h3 span:nth-of-type(9){
+    
+    animation-delay: .8s
+}
+
+.bio .right h3 span:nth-of-type(10){
+    
+    animation-delay: .9s
+}
+
+.bio .right h3 span:nth-of-type(11){
+    
+    animation-delay: 1s
+}
+
+@keyframes animate{
+    
+    40%{
+        transform: translateX(40px);
+        color: #ff0000;
+        
+    }
+        
+    100%{
+        transform: translate(0);
+        color: #fff;
+        opacity: 1;
+        
+    }
+    
+    
+}
+
+.bio .right img{
+    
+    width: 300px;
+    max-width: 100%;
+    height: 410px;
+    
+    
+}
+
+
+/*     start skills   */
+
+
+
+.skills{
+    
+    position: relative;
+    top: 100%;
+    margin: auto;
+    height: 70vh;
+    width: 800px;
+    max-width: 100%;
+    box-shadow: 5px 5px 20px #222;
+    background-color: #222;
+    display: flex;
+    
+}
+.skills h5{
+    opacity: .5;
+    color: #ddd;
+    margin-top: 10px;
+    font-size: 45px;
+    height: 45px;
+    width: 130px;
+    margin-left: 20px;
+    border-bottom: 2px solid #ddd;
+    position: absolute
+    
+    
+}
+
+.skills .div-1,.div-2{
+    
+    
+    color: #ddd;
+    margin-top: 150px;
+    
+}
+.skills .div-1{
+    
+    width: 500px;
+    max-width: 100%;
+    display: grid;
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 10px;
+    
+}
+.skills .div-1 h2{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    
+    
+    
+}
+.skills .div-2{
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 25px;
+    width: 500px;
+    max-width: 100%
+    
+  
+}
+
+.skills .div-2 .bar-1,.bar-2,.bar-3,.bar-4{
+    
+    margin-top: 5px;
+    margin-bottom: 45px;
+    width: 400px;
+    max-width: 100%;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #ddd;
+    
+}
+
+.skills .div-2 .bar-1 .subBar-1{
+    
+    width: 380px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #f5f500;
+    
+}
+.skills .div-2 .bar-2 .subBar-2{
+    
+    width: 200px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #f5f500;
+    
+}
+.skills .div-2 .bar-3 .subBar-3{
+    
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #f5f500;
+    
+}
+.skills .div-2 .bar-4 .subBar-4{
+    
+    width: 180px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #f5f500;
+    
+}
+/*     end skills   */
+/* start contact  */
+
+
+.contact{
+    
+    position: relative;
+    top: 100%;
+    background-color: #222;
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 5px 5px 20px #222;
+    
+}
+.contact h3{
+    
+    color: #ddd;
+    font-size: 35px;
+    border-bottom: 2px solid #ddd;
+    width: 135px;
+    opacity: .5;
+    
+    
+}
+.contact form{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 600px;
+    max-width: 100%;
+    margin-top: 100px;
+    padding: 50px;
+    
+    
+}
+.contact form .inputs{
+    
+    display: grid;
+    grid-template-rows: auto auto auto;
+    
+}
+.contact form .message{
+    
+    display: grid;
+    grid-template-rows: auto auto;
+    width: 350px;
+    height: 250px;
+    margin: auto
+    
+}
+.contact form .inputs input{
+    
+    margin-top: 20px;
+    border: none;
+    height: 30px;
+    padding: 15px;
+    width: 350px;
+    max-width: 80%;
+    
+    
+}
+.contact form .message textarea{
+    
+    
+    height: 250px;
+    border: none;
+    text-align: center
+    
+}
+.contact form .message button{
+    
+    
+    height: 55px;
+    border:none;
+    background-color: forestgreen;
+    color: #ddd;
+    font-size: 30px;
+    
+}
+.contact form .message button:hover{
+    
+    background-color: darkgreen;
+    cursor: pointer
+}
+
+
+
+
+
+
+/* end contact  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*    end header   */
